@@ -1,5 +1,4 @@
 const input = document.querySelector("input");
-const createGif = document.querySelector("#submit")
 const form = document.querySelector("form")
 const gifCont = document.querySelector(".container")
 const deleteAll = document.querySelector("#delete")
@@ -13,8 +12,6 @@ function makeGif(imgSrc){
  img.src = imgSrc;
  div.append(img);
  gifCont.append(div);
-    
-
 }
 form.addEventListener("submit", async function(e){
     e.preventDefault();
